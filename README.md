@@ -33,17 +33,18 @@ Como estudante de Ciências da Computação, este projeto teve como objetivo int
 ![telaInicial](https://github.com/user-attachments/assets/4f253e4d-720f-435b-b8dd-ebc83888d6e0)
 
 
-**Campo Fácil**
-
-![image](https://github.com/user-attachments/assets/3d3fe71b-45d7-41f3-8fa3-a5caf4795d7d)
-
-nessa tela o GridLayout é responsável por gerar as ImageView que serão os botões no momento da criação.
-
 **Campo Personalizado**
 
 ![image](https://github.com/user-attachments/assets/de1f2040-b9eb-4dfa-bab9-a03cfe788b2b)
 
 nessa tela o usuário digita o tamanho do campo que será criado, os campo data e hora correspondem a atual data e tempo no seguinte formato dd/MM/yyyy e mm/SS que também são substituidos no momento da criação.
+
+**Tela doJogo**
+
+<img src="https://github.com/user-attachments/assets/7b8f666c-9206-409f-ab28-44597704f1dd" alt="Tela do jogo" width="250" height="380">
+
+
+Tela do jogo em funcionamento.
 
 
 **Ranking**
