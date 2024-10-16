@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundoJogo"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:id="@+id/matrizGridLayout3"
+        android:layout_width="385sp"
+        android:layout_height="385sp"
+        android:layout_margin="1sp"
+        app:layout_constraintBottom_toTopOf="@+id/botaoJogarId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoTextoId"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <Button
+        android:id="@+id/botaoJogarId"
+        android:layout_width="193dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:drawable/divider_horizontal_dim_dark"
+        android:backgroundTint="@color/vizinhos"
+        android:text="@string/jogar"
+
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/vizinhos"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/campoTextoId"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="@string/digite_o_tamanho"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/botaoBandeira2Id"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoTextoId"
+        app:srcCompat="@drawable/bandeira" />
+
+    <ImageView
+        android:id="@+id/botaoDuvida2Id"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoTextoId"
+        app:srcCompat="@drawable/duvida" />
+
+    <Button
+        android:id="@+id/desmarcarBotaoId"
+        android:layout_width="126dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/divider_horizontal_bright"
+        android:backgroundTint="@color/botoesSemClickar"
+        android:text="@string/desmarcar"
+
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/botaoDuvida2Id"
+        app:layout_constraintStart_toEndOf="@+id/botaoBandeira2Id"
+        app:layout_constraintTop_toBottomOf="@+id/campoTextoId" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="clicadas"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matrizGridLayout3" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="bandeiras"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/matrizGridLayout3" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="duvidas"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matrizGridLayout3" />
+
+    <TextView
+        android:id="@+id/qtdClicadas4Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/qtdBandeiras4Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/qtdDuvidas4Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/data4Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="data"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoDuvida2Id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fundoJogo">#f2f1f0</color>
+    <color name="botoesJogoVazios">#dededc</color>
+    <color name="botoesSemClickar">#babdb6</color>
+    <color name="botaoJogar">#f7f7f7</color>
+    <color name="vermelho">#f20000</color>
+    <color name="vizinhos">#4c5253</color>
+</resources>

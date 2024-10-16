@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CampoMinado</string>
+    <string name="jogar">Jogar</string>
+    <string name="digite_o_tamanho">Digite o tamanho</string>
+    <string name="desmarcar">desmarcar</string>
+    <string name="jogadas">clicadas</string>
+</resources>

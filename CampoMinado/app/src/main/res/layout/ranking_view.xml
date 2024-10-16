@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tempoRankingId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="tempo"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/DataRankingId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tempoRankingId"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Data"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/clickadasRankingId"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DataRankingId"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="clicadas"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bandeirasRankingId"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DataRankingId"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@id/clickadasRankingId"
+        android:text="bandeiras"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/duvidasRankingId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DataRankingId"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/bandeirasRankingId"
+        android:text="duvida"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/botoesSemClickar"
+        />
+
+</RelativeLayout>
